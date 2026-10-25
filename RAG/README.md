@@ -24,22 +24,22 @@ Retrieval-Augmented Generation grounds LLM answers in external proprietary or pr
 
 ```mermaid
 flowchart TD
-    subgraph Ingestion Phase
-        Doc[Documents: PDF / TXT] --> Split[Recursive Character Text Splitter]
-        Split --> Chunks[Text Chunks]
-        Chunks --> Embed[Embedding Model]
-        Embed --> VDB[(Vector Database / Store)]
+    subgraph Ingestion["Ingestion Phase"]
+        Doc["Documents: PDF / TXT"] --> Split["Recursive Character Text Splitter"]
+        Split --> Chunks["Text Chunks"]
+        Chunks --> Embed["Embedding Model"]
+        Embed --> VDB[("Vector Database / Store")]
     end
 
-    subgraph Query & Generation Phase
-        Query[User Question] --> QEmbed[Embed Question]
-        QEmbed --> Search[Top-K Similarity Search]
+    subgraph QueryGen["Query & Generation Phase"]
+        Query["User Question"] --> QEmbed["Embed Question"]
+        QEmbed --> Search["Top-K Similarity Search"]
         VDB --> Search
-        Search --> Context[Relevant Context Chunks]
-        Context --> Prompt[Augmented Prompt: Context + Question]
+        Search --> Context["Relevant Context Chunks"]
+        Context --> Prompt["Augmented Prompt: Context + Question"]
         Query --> Prompt
-        Prompt --> LLM[Large Language Model]
-        LLM --> Answer[Accurate Grounded Response]
+        Prompt --> LLM["Large Language Model"]
+        LLM --> Answer["Accurate Grounded Response"]
     end
 ```
 

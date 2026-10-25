@@ -17,14 +17,14 @@ Combining multiple base estimators to create a superior, robust predictive model
 
 ```mermaid
 flowchart TD
-    Ensemble[Ensemble Paradigms]
-    Ensemble --> Bagging[1. Bagging / Bootstrap Aggregating]
-    Ensemble --> Boosting[2. Boosting / Sequential Learners]
-    Ensemble --> Stacking[3. Stacking / Blending]
+    Ensemble["Ensemble Paradigms"]
+    Ensemble --> Bagging["1. Bagging / Bootstrap Aggregating"]
+    Ensemble --> Boosting["2. Boosting / Sequential Learners"]
+    Ensemble --> Stacking["3. Stacking / Blending"]
     
-    Bagging --> RF[Random Forest: Reduces Variance]
-    Boosting --> AB[AdaBoost, Gradient Boosting, XGBoost: Reduces Bias]
-    Stacking --> Het[Heterogeneous Meta-Classifier]
+    Bagging --> RF["Random Forest: Reduces Variance"]
+    Boosting --> AB["AdaBoost, Gradient Boosting, XGBoost: Reduces Bias"]
+    Stacking --> Het["Heterogeneous Meta-Classifier"]
 ```
 
 1. **Bagging (Bootstrap Aggregation)**:

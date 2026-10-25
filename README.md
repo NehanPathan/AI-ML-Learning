@@ -11,34 +11,34 @@ A comprehensive, topic-based learning repository and hands-on portfolio organize
 
 ```mermaid
 flowchart TD
-    subgraph Level 1: Foundations
-        Py[python/ & visualization/]
-        Scr[web_scraping/ & datasets/]
+    subgraph L1["Level 1: Foundations"]
+        Py["python/ & visualization/"]
+        Scr["web_scraping/ & datasets/"]
     end
 
-    subgraph Level 2: Classical Machine Learning
-        Sup[supervised_ml/: Classification, Regression, Ensembles]
-        Unsup[unsupervised_ml/: Clustering, PCA, Anomaly Detection]
+    subgraph L2["Level 2: Classical Machine Learning"]
+        Sup["supervised_ml/ (Classification, Regression, Ensembles)"]
+        Unsup["unsupervised_ml/ (Clustering, PCA, Anomaly Detection)"]
     end
 
-    subgraph Level 3: Deep Learning with PyTorch
-        ANN[ANN: Tabular MLPs]
-        CNN[CNN: Computer Vision]
-        RNN[RNN: Sequential NLP]
-        GAN[GAN: Generative Modeling]
-        RL[Reinforcement Learning & DQN]
-        Trans[Transformers & Seq2Seq]
+    subgraph L3["Level 3: Deep Learning with PyTorch"]
+        ANN["ANN: Tabular MLPs"]
+        CNN["CNN: Computer Vision"]
+        RNN["RNN: Sequential NLP"]
+        GAN["GAN: Generative Modeling"]
+        RL["Reinforcement Learning & DQN"]
+        Trans["Transformers & Seq2Seq"]
     end
 
-    subgraph Level 4: Frontier Generative AI & Deployment
-        RAG[RAG/: Document Ingestion & Vector Retrieval]
-        Agno[agentic_agno/: Autonomous Tool-Using Agents]
-        Flask[flask/: Microservices & Web Apps]
+    subgraph L4["Level 4: Frontier Generative AI & Deployment"]
+        RAG["RAG/: Document Ingestion & Vector Retrieval"]
+        Agno["agentic_agno/: Autonomous Tool-Using Agents"]
+        Flask["flask/: Microservices & Web Apps"]
     end
 
-    Level 1 --> Level 2
-    Level 2 --> Level 3
-    Level 3 --> Level 4
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
 ```
 
 ---

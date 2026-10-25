@@ -18,13 +18,13 @@ Modeling sequential data and Natural Language Processing (NLP) using Recurrent N
 
 ```mermaid
 flowchart LR
-    A[Raw Text Review] --> B[Text Cleaning & Tokenization]
-    B --> C[Vocabulary & Integer Encoding]
-    C --> D[Sequence Padding / Truncation]
-    D --> E[Embedding Layer nn.Embedding]
-    E --> F[RNN / LSTM Layer]
-    F --> G[Dense Head & Sigmoid]
-    G --> H[Sentiment Probability]
+    A["Raw Text Review"] --> B["Text Cleaning & Tokenization"]
+    B["Text Cleaning & Tokenization"] --> C["Vocabulary & Integer Encoding"]
+    C["Vocabulary & Integer Encoding"] --> D["Sequence Padding / Truncation"]
+    D["Sequence Padding / Truncation"] --> E["Embedding Layer (nn.Embedding)"]
+    E["Embedding Layer (nn.Embedding)"] --> F["RNN / LSTM Layer"]
+    F["RNN / LSTM Layer"] --> G["Dense Head & Sigmoid"]
+    G["Dense Head & Sigmoid"] --> H["Sentiment Probability"]
 ```
 
 ### Key Stages Explained:

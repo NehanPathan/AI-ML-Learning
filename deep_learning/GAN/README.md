@@ -21,11 +21,11 @@ A GAN consists of two competing neural networks trained simultaneously:
 
 ```mermaid
 flowchart LR
-    Z[Latent Noise z] --> G[Generator G]
-    G --> Fake[Fake Images]
-    Real[Real Images] --> D[Discriminator D]
+    Z["Latent Noise z"] --> G["Generator G"]
+    G --> Fake["Fake Images"]
+    Real["Real Images"] --> D["Discriminator D"]
     Fake --> D
-    D --> Loss[Adversarial Binary Cross Entropy Loss]
+    D --> Loss["Adversarial Binary Cross Entropy Loss"]
 ```
 
 $$\min_G \max_D V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log (1 - D(G(z)))]$$

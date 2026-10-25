@@ -50,12 +50,12 @@ deep_learning/
 
 ```mermaid
 flowchart LR
-    A[Neuron Foundations] --> B[ANN: Tabular MLPs]
-    B --> C[CNN: Computer Vision]
-    B --> D[RNN: Sequential NLP]
-    C --> E[GAN: Generative Vision]
-    D --> F[Transformer: Modern LLMs & Seq2Seq]
-    B --> G[RL: Q-Learning & DQN]
+    A["Neuron Foundations"] --> B["ANN: Tabular MLPs"]
+    B --> C["CNN: Computer Vision"]
+    B --> D["RNN: Sequential NLP"]
+    C --> E["GAN: Generative Vision"]
+    D --> F["Transformer: Modern LLMs & Seq2Seq"]
+    B --> G["RL: Q-Learning & DQN"]
 ```
 
 1. **Neuron Foundations (`Neuron.ipynb`)**:
