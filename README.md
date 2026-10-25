@@ -2,9 +2,6 @@
 
 A comprehensive, topic-based learning repository and hands-on portfolio organized by foundational mathematics, classical Machine Learning, modern Deep Learning architectures (PyTorch), and frontier Agentic AI.
 
-> [!NOTE]
-> This repository is dedicated exclusively to curriculum modules, conceptual notebooks, and self-contained mini-projects. Large-scale standalone projects are maintained separately outside this folder in `../Major Projects`.
-
 ---
 
 ## 🗺️ Curriculum Architecture
