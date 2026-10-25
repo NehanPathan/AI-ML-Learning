@@ -1,0 +1,158 @@
+# ==============================================================================
+# Git Ignore Rules for Machine Learning & Python Repository
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Sensitive Files & Secrets (NEVER PUSH TO GITHUB)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+secrets.json
+credentials.json
+api_key*.py
+*secret*
+
+# ------------------------------------------------------------------------------
+# 2. Virtual Environments
+# ------------------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+bin/
+lib/
+include/
+Scripts/
+
+# ------------------------------------------------------------------------------
+# 3. Python Bytecode, Compilations & Cache
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# 4. Jupyter Notebooks & Interactive Development
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.virtual_documents/
+*/.virtual_documents/*
+
+# ------------------------------------------------------------------------------
+# 5. Machine Learning Checkpoints, Training Artifacts & Heavy Models
+# ------------------------------------------------------------------------------
+# Model outputs & checkpoints
+runs/
+results/
+saved_summary_model/
+**/saved_summary_model/
+checkpoints/
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# Experiment trackers & metrics
+wandb/
+.tensorboard/
+
+# Hugging Face / Torch cache
+.cache/
+hf_cache/
+
+# Large datasets & downloaded raw caches
+deep_learning/GAN/img_align_celeba/
+deep_learning/CNN/data/
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ------------------------------------------------------------------------------
+# 6. Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+
+# ------------------------------------------------------------------------------
+# 7. IDEs & Editors
+# ------------------------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iws
+*.iml
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+# ------------------------------------------------------------------------------
+# 8. Testing, Profiling & Coverage
+# ------------------------------------------------------------------------------
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ------------------------------------------------------------------------------
+# 9. Logs & Temporary Files
+# ------------------------------------------------------------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+.git-learning-backup/
